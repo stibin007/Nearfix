@@ -11,7 +11,7 @@ CREATE TABLE areas (
 );
 
 CREATE TABLE providers (
-  id SERIAL PRIMARY KEY,s
+  id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   type TEXT NOT NULL CHECK (type IN ('individual', 'company')),
   phone TEXT NOT NULL,
